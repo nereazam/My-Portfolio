@@ -4,7 +4,7 @@
 --color-2: white;
 --color-3: #800080;
 --color-4: rgb(39, 100, 186);
---color-5: #7e6368;
+--color-5: #bba0a5;
 }
 
 
@@ -277,89 +277,109 @@ bottom: 0;
 /* seccion C O N T A C T O */
 /**************************/
 
+/* Estilos para la sección de Contacto */
 .contact {
-padding: 100px 15px;
-background-color: #f3f3f3;
-}
+    background-image:url("../USA-Washington-National-Park-forest-mountains-lake-moonlight-night_1920x1200.jpg");
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact .container {
+    width: 60%;
+  }
+  
+  .contact .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left ;
+   
+  }
+  
+ 
+  
+  .contact .half {
+    flex-basis: 50%;
+    padding-right: 10px;
+  }
+  
 
-.contact .section-title {
-margin-bottom: 20px;
-color: #0a0a47;
-}
-
-.contact .form-container {
-max-width: 1100px;
-margin: auto;
-}
-
-.contact .form-container .row {
-margin-bottom: 15px;
-}
-
-.contact .form-container .half {
-display: flex;
-justify-content: space-between;
-}
-
-.contact .form-container input,
-.contact .form-container textarea {
-padding: 20px;
-border-radius: 20px;
-border: none;
-border: 1px solid #919191;
-font-family: "Courier New", Courier, monospace;
-color: #0a0a47;
-}
-
-.contact .form-container .half input {
-width: 48%;
-}
-
-.contact .form-container .input-full {
-width: 100%;
-}
-
-.contact .section-title {
-text-align: center;
-font-size: 22px;
-text-transform: uppercase;
-color: #0a0a47;
-text-decoration: none;
-}
-
-.contact .submit-button {
-display: block;
-margin: auto;
-cursor: pointer;
-transition: .5s;
-padding: 10px 15px ;
-background-color: #ff69b4;
-color: #fff;
-border: none;
-border-radius: 20px;
-font-family: "Courier New", Courier, monospace;
-font-size: 18px;
-}
-
-.contact .submit-button:hover {
-background-color: #940027;
-color: #fff;
-}
+  
+  .contact input,
+  .contact input,
+  .contact textarea {
+  width: 500px;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid black;
+  }
+  
+ 
+  .contact textarea {
+    height: 120px;
+  }
+  
+  .contact .send-btn {
+    background-color: rgb(36, 36, 108);
+    width: 150px;
+    color: white;
+    border-radius: 10px;
+    padding: 10px ;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid black;
+  }
+  
+  .contact .send-btn:hover {
+    background-color: #1976D2;
+  }
+  
+  .contact .social-icons i {
+    font-size: 18px;
+    color: var(--color-2);
+    transition: all 0.3s ease;
+    }
+    
+    .contact .social-icons i:hover {
+    color: var(--color-4);
+    }
+  
+  
+  
 
 /* F O O T E R */
 /**************/
 
-footer {
-background-color: #0a0a47;
-color: #fff;
-text-align: center;
-padding: 30px 0;
-}
 
-footer a {
-text-decoration: none;
-color: #fff;
-display: inline-block;
-margin: 5px;
-font-size: 26px;
-}
+footer 
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;  
+    background-color: rgb(46, 45, 45);
+    color: white;
+    height: 60px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  
+  
+  
