@@ -155,10 +155,10 @@ font-family: 'Roboto', sans-serif;
     
     .photo-container img {
     object-fit: contain;
-    max-width: 200px;
+    max-width: 250px;
     margin: 30px;
  padding: 2px;
-border-radius: 100px;
+border-radius: 150px;
 background-color: var(--color-2);
     }
 
@@ -277,14 +277,15 @@ bottom: 0;
 /* seccion C O N T A C T O */
 /**************************/
 
-/* Estilos para la sección de Contacto */
 .contact {
-    background-image:url("../USA-Washington-National-Park-forest-mountains-lake-moonlight-night_1920x1200.jpg");
+    background-image:url("../depositphotos_43170711-stock-photo-nature.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    
+    background-size: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+padding: 20px;
   }
   
   .contact .container {
@@ -295,6 +296,8 @@ bottom: 0;
     text-align: center;
     font-size: 2rem;
     margin: 40px;
+    color: white;
+    text-transform: uppercase;
   }
   
   .contact form {
@@ -322,7 +325,7 @@ bottom: 0;
     padding: 10px;
     font-size: 1rem;
     margin-bottom: 10px;
-    border: 1px solid black;
+   
   }
   
  
@@ -346,15 +349,6 @@ bottom: 0;
     background-color: #1976D2;
   }
   
-  .contact .social-icons i {
-    font-size: 18px;
-    color: var(--color-2);
-    transition: all 0.3s ease;
-    }
-    
-    .contact .social-icons i:hover {
-    color: var(--color-4);
-    }
   
   
   
@@ -381,5 +375,12 @@ footer
   }
   
   
-  
+  footer .container .social-icons i {
+    font-size: 18px;
+    color: var(--color-2);
+    transition: all 0.3s ease;
+    margin: 10px;
+    }
+    
+ 
   
