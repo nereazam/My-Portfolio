@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
     />
     <link
       rel="stylesheet"
@@ -14,271 +15,179 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Web Portfolio</title>
+    <title>Portfolio</title>
   </head>
+
   <body>
-    <!-- START SECTION -->
-    <section class="start">
-      <div class="start__content">
-        <header class="header">
-          <div class="header__content">
-            <h1 class="header__title">Nerea</h1>
+    <!-- SECTION START -->
+    <section class="section-start">
+      <div class="content">
+        <header>
+          <div class="header-content">
+            <h1>NZ</h1>
             <nav class="nav">
-              <ul class="nav__links">
+              <ul class="nav-links">
                 <li>
-                  <a href="#start" class="nav__link--selected">START</a>
+                  <a href="#inicio" class="selected" onclick="select(this)"
+                    >HOME</a
+                  >
                 </li>
                 <li>
-                  <a href="#about">ABOUT</a>
+                  <a href="#about" onclick="select(this)">ABOUT</a>
                 </li>
                 <li>
-                  <a href="#services">SERVICES</a>
+                  <a href="#services" onclick="select(this)">SERVICES</a>
                 </li>
                 <li>
-                  <a href="#portfolio">PORTFOLIO</a>
+                  <a href="#portfolio" onclick="select(this)">PORTFOLIO</a>
                 </li>
                 <li>
-                  <a href="#contact">CONTACT</a>
+                  <a href="#contact" onclick="select(this)">CONTACT</a>
                 </li>
               </ul>
             </nav>
 
-            php
-
             <!-- Responsive menu icon -->
-            <div class="nav__icon" onclick="responsiveMenu()">
-              <i class="fa-solclass fa-bars"></i>
+            <div class="nav-icon" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
             </div>
 
-            <div class="social">
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <div class="social-media">
               <a href="#"><i class="fa-brands fa-github"></i></a>
-              <a href="#"><i class="fa-brands fa-email"></i></a>
+              <a href="#"
+                ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
+              ></a>
+              <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> </a>
             </div>
           </div>
         </header>
-        <div class="start__presentation">
-          <p class="start__subtitle">Welcome to know me</p>
-          <h2 class="start__title">
-            I'm <span class="start__name">Nerea Zamanillo</span>, Junior Web
-            Developer
-          </h2>
-          <p class="start__description">Step into my world</p>
-          <a href="#portfolio" class="start__button">Go to Portfolio</a>
+        <div class="presentation">
+         <p class="wellcome">HI, I am</p>
+          <h2><span>Nerea Zamanillo</span>, Front-end Developer</h2>
+          <p class="description">
+          This is my job
+          </p>
+          <a href="#portfolio">Go to Portfolio</a>
         </div>
       </div>
     </section>
   </body>
 </html>
-<!-- SECTION A B O U T -->
-<section class="about">
-    <div class="about__photo-container">
-      <img src="img/photo.jpg" alt="Nerea Zamanillo's photo" />
-    </div>
-    <div class="about__content">
-      <p class="about__section-title">About Me</p>
-      <h2 class="about__name">My name is <span>Nerea Zamanillo</span></h2>
-      <h3 class="about__job-title">Junior Web Developer</h3>
-      <p class="about__description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
-        reprehenderit voluptatibus blanditiis nulla adipisci iste fuga expedita,
-        ea exercitationem dicta, similique rem, atque soluta recusandae ipsam
-        autem. Sapiente, quo ducimus?
-      </p>
-      <p class="about__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a
-        beatae natus.
-      </p>
-      <a href="#" class="about__download-cv-btn">Download CV</a>
-    </div>
-  </section>
-  
-  <!-- SECTION S E R V I C E S -->
-  <section class="services">
-    <h3 class="services__section-title">Services</h3>
-    <div class="services__row">
-      <div class="services__item">
-        <span class="services__icon"><i class="fas fa-code"></i></span>
-        <h4 class="services__item-title">Web Design</h4>
-        <hr class="services__hr" />
-        <ul class="services__tags">
-          <li>Web</li>
-          <li>Graphic</li>
-          <li>SEO</li>
-        </ul>
-        <p class="services__item-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          voluptatibus rem illum sunt, asperiores!
-        </p>
-      </div>
-      <div class="services__item">
-        <span class="services__icon"><i class="fas fa-file-code"></i></span>
-        <h4 class="services__item-title">PHP Programming</h4>
-        <hr class="services__hr" />
-        <ul class="services__tags">
-          <li>Web</li>
-          <li>Graphic</li>
-          <li>SEO</li>
-        </ul>
-        <p class="services__item-description">
-          I have been providing web design services with great success for 9
-          years. The client is very happy.
-        </p>
-      </div>
-      <div class="services__item">
-        <span class="services__icon"><i class="fas fa-arrow-trend-up"></i></span>
-        <h4 class="services__item-title">SEO Optimization</h4>
-        <hr class="services__hr" />
-        <ul class="services__tags">
-          <li>Web</li>
-          <li>Graphic</li>
-          <li>SEO</li>
-        </ul>
-        <p class="services__item-description">
-          I have been providing web design services with great success for 9
-          years. The client is very happy.
-        </p>
+<!-- ABOUT ME SECTION -->
+<section id="about-me">
+  <div class="photo-container">
+    <img src="nerea.jpg" alt="" />
+  </div>
+  <div class="about-me-content">
+    <p class="section-title">About Me</p>
+    <h2>Hi, I'm <span>Nerea Zamanillo</span></h2>
+    <h3>Front-end Developer</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum leo
+      non feugiat malesuada. Nulla quis nibh a dolor interdum dignissim.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ultricies
+      libero. Ut sed dui ullamcorper, commodo orci a, tempus nulla. Nulla ac
+      quam vel eros blandit scelerisque.
+    </p>
+    <a href="#">Download CV</a>
+  </div>
+</section>
+<!-- PORTFOLIO SECTION -->
+<section class="portfolio">
+  <h3 class="section-title">My Projects</h3>
+  <div class="row">
+    <div class="project">
+      <div class="overlay"></div>
+      <img src="img/project1.jpg" alt="" />
+      <div class="info">
+        <h4>Project Description</h4>
+        <p>Web Design</p>
       </div>
     </div>
-    <div class="services__row">
-      <div class="services__item">
-        <span class="services__icon"><i class="fas fa-database"></
-            <div class="skill-container">
-                <h3 class="section-title">Skills</h3>
-                <div class="skill">
-                  <div class="skill-info">
-                    <p><span class="bullet"> </span>HTML & CSS</p>
-                    <span class="percentage">95%</span>
-                  </div>
-                  <div class="progress-bar">
-                    <div class="skill-html"></div>
-                  </div>
-                </div>
-                <div class="skill">
-                  <div class="skill-info">
-                    <p><span class="bullet"> </span>Javascript</p>
-                    <span class="percentage">90%</span>
-                  </div>
-                  <div class="progress-bar">
-                    <div class="skill-js"></div>
-                  </div>
-                </div>
-                <div class="skill">
-                  <div class="skill-info">
-                    <p><span class="bullet"> </span>Databases</p>
-                    <span class="percentage">90%</span>
-                  </div>
-                  <div class="progress-bar">
-                    <div class="skill-db"></div>
-                  </div>
-                </div>
-                <div class="skill">
-                  <div class="skill-info">
-                    <p><span class="bullet"> </span>Photoshop</p>
-                    <span class="percentage">85%</span>
-                  </div>
-                  <div class="progress-bar">
-                    <div class="skill-ps"></div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- PORTFOLIO SECTION -->
-              <section class="portfolio-section">
-                <h3 class="section-title">My Projects</h3>
-                <div class="row">
-                  <div class="project">
-                    <div class="overlay"></div>
-                    <img src="img/proyecto1.jpg" alt="" />
-                    <div class="project-info">
-                      <h4>Project Description</h4>
-                      <p>Web Design</p>
-                    </div>
-                  </div>
-                  <div class="project">
-                    <div class="overlay"></div>
-                    <img src="img/proyecto2.jpg" alt="" />
-                    <div class="project-info">
-                      <h4>Project Description</h4>
-                      <p>Web Design</p>
-                    </div>
-                  </div>
-                  <div class="project">
-                    <div class="overlay"></div>
-                    <img src="img/proyecto3.jpg" alt="" />
-                    <div class="project-info">
-                      <h4>Project Description</h4>
-                      <p>Web Design</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="project">
-                    <div class="overlay"></div>
-                    <img src="img/proyecto4.jpg" alt="" />
-                    <div class="project-info">
-                      <h4>Project Description</h4>
-                      <p>Web Design</p>
-                    </div>
-                  </div>
-                  <div class="project">
-                    <div class="overlay"></div>
-                    <img src="img/proyecto5.jpg" alt="" />
-                    <div class="project-info">
-                      <h4>Project Description</h4>
-                      <p>Web Design</p>
-                    </div>
-                  </div>
-               
-                     
-                <!-- CONTACT SECTION -->
+    <div class="project">
+      <div class="overlay"></div>
+      <img src="img/project2.jpg" alt="" />
+      <div class="info">
+        <h4>Project Description</h4>
+        <p>Web Design</p>
+      </div>
+    </div>
+    <div class="project">
+      <div class="overlay"></div>
+      <img src="img/project3.jpg" alt="" />
+      <div class="info">
+        <h4>Project Description</h4>
+        <p>Web Design</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="project">
+      <div class="overlay"></div>
+      <img src="img/project4.jpg" alt="" />
+      <div class="info">
+        <h4>Project Description</h4>
+        <p>Web Design</p>
+      </div>
+    </div>
+    <div class="project">
+      <div class="overlay"></div>
+      <img src="img/project5.jpg" alt="" />
+      <div class="info">
+        <h4>Project Description</h4>
+        <p>Web Design</p>
+      </div>
+    </div>
+    <div class="project">
+      <div class="overlay"></div>
+      <img src="img/project6.jpg" alt="" />
+      <div class="info">
+        <h4>Project Description</h4>
+        <p>Web Design</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
 <section class="contact">
+  <div class="container">
     <h3 class="section-title">Contact Me</h3>
-    <div class="form-container">
-      <form action="">
-        <div class="row half-width">
-          <input
-            type="text"
-            placeholder="Full Name *"
-            class="input-half"
-          />
-          <input
-            type="email"
-            placeholder="Email Address"
-            class="input-half"
-          />
+    <form>
+      <div class="row">
+        <div class="half">
+          <input type="text" placeholder="First Name" />
         </div>
-        <div class="row">
-          <input type="text" placeholder="Subject..." class="input-full" />
+        <div class="half">
+          <input type="text" placeholder="Last Name" />
         </div>
-        <div class="row">
-          <textarea
-            name=""
-            class=""
-            cols="30"
-            rows="10"
-            placeholder="Your Message..."
-            class="input-full"
-          ></textarea>
+      </div>
+      <div class="row">
+        <div class="input-full">
+          <input type="email" placeholder="Email" />
         </div>
-  
-  python
-  
-    <input type="submit" value="Send Message" class="btn-send" />
-  </form>
-  
+      </div>
+      <div class="row">
+        <div class="input-full">
+          <textarea placeholder="Message"></textarea>
+        </div>
+      </div>
+      <button class="send-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer>
+  <div class="container">
+    <p>&copy; 2023 John Doe. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-github" aria-hidden="true"></i> </i></a>
+      <a href="#"><i class="fa fa-linkedin-in" aria-hidden="true"></i> </a>
+      <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> </i></a>
+
     </div>
-  </section>
-  <!-- FOOTER SECTION -->
-  <footer>
-    <p>All Rights Reserved - 2023</p>
-    <div class="social-links">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fas fa-envelope"></i></a>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-  </body>
-  </html>
-  
+  </div>
+</footer>
