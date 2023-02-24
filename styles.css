@@ -60,7 +60,7 @@ margin: 0 15px;
 
 .nav-links a {
 text-decoration: none;
-font-size: 16px;
+font-size: 18px;
 font-weight: bold;
 color: var(--color-4);
 transition: all 0.3s ease;
@@ -85,20 +85,20 @@ cursor: pointer;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-right: 30px;
+margin-right: 40px;
 gap: 20px;text-decoration: none;
 
 
 
 }
 
-.social-media i {
-font-size: 18px;
+header .social-media i {
+font-size: 22px;
 color: var(--color-2);
 transition: all 0.3s ease;
 }
 
-.social-media i:hover {
+header .social-media i:hover {
 color: var(--color-4);
 }
 
@@ -110,6 +110,7 @@ justify-content: center;
 align-items: center;
 height: 100vh;
 background-image:url(../photo-1527412247916-fcb426a73996.webp);
+background-attachment: fixed;
 background-size: cover;
 background-position: center;
 color: var(--color-2);
@@ -155,11 +156,12 @@ font-family: 'Roboto', sans-serif;
     
     .photo-container img {
     object-fit: contain;
-    max-width: 250px;
+    max-width: 280px;
     margin: 30px;
  padding: 2px;
 border-radius: 150px;
 background-color: var(--color-2);
+margin-left: 90px;
     }
 
 
@@ -279,7 +281,7 @@ bottom: 0;
 
 .contact {
     background-image:url("../depositphotos_43170711-stock-photo-nature.jpg");
-    background-attachment: fixed;
+   
     background-repeat: no-repeat;
     background-size: 100vw;
     display: flex;
@@ -304,7 +306,7 @@ padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left ;
+    align-items: center ;
    
   }
   
@@ -320,9 +322,9 @@ padding: 20px;
   .contact input,
   .contact input,
   .contact textarea {
-  width: 500px;
-    border-radius: 8px;
-    padding: 10px;
+  width: 400px;
+    border-radius: 10px;
+    padding:5px;
     font-size: 1rem;
     margin-bottom: 10px;
    
@@ -334,7 +336,7 @@ padding: 20px;
   }
   
   .contact .send-btn {
-    background-color: rgb(36, 36, 108);
+    background-color:rgb(19, 19, 100);
     width: 150px;
     color: white;
     border-radius: 10px;
@@ -346,7 +348,7 @@ padding: 20px;
   }
   
   .contact .send-btn:hover {
-    background-color: #1976D2;
+    background-color: var(--color-4);
   }
   
   
