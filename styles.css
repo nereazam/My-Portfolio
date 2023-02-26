@@ -33,7 +33,7 @@ position: fixed;
 width: 100%;
 align-items: center;
 padding: 20px;
-background-color:rgba(221, 221, 227, 0.9);
+background-color:rgba(154, 154, 157, 0.9);
 
 
 
@@ -280,8 +280,8 @@ bottom: 0;
 /**************************/
 
 .contact {
-    background-image:url("../depositphotos_43170711-stock-photo-nature.jpg");
-   
+    background-image:url("../images/mano-astronauta-robot-fondo-pantalla-ciencia-ficcion-elementos-imagen-proporcionada-nasa_112293-712.avif");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100vw;
     display: flex;
