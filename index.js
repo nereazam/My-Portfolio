@@ -1,3 +1,4 @@
+const nodemailer = require("nodemailer");
 const nightModeToggle = document.querySelector(".night-mode");
 nightModeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
@@ -32,4 +33,32 @@ navLinks.addEventListener("click", () => {
   navToggle.classList.remove("nav-open");
   navLinks.classList.add("nav-none");
   bars.forEach((bar) => bar.classList.remove("nav-open"));
+});
+
+// Configurar el transporte SMTP
+const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
+  auth: {
+    user: "tu-correo@gmail.com",
+    pass: "tu-contraseña",
+  },
+});
+
+// Definir el mensaje
+const mailOptions = {
+  from: "tu-correo@gmail.com",
+  to: "destinatario@ejemplo.com",
+  subject: "Asunto del correo electrónico",
+  text: "Contenido del correo electrónico",
+};
+
+// Enviar el mensaje
+transporter.sendMail(mailOptions, function (error, info) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log("Correo electrónico enviado: " + info.response);
+  }
 });
