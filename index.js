@@ -17,16 +17,19 @@ function typeWriter() {
 
 window.onload = typeWriter;
 
+const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
-const burgerMenu = document.querySelector(".burger-menu");
-const closeMenu = document.querySelector(".close-menu");
+const bars = document.querySelectorAll(".bar");
 
-burgerMenu.addEventListener("click", () => {
-  navLinks.classList.toggle("nav-active");
-  burgerMenu.classList.toggle("toggle");
+navToggle.addEventListener("click", () => {
+  navToggle.classList.toggle("nav-open");
+  navLinks.classList.toggle("nav-none");
+  bars.forEach((bar) => bar.classList.toggle("nav-open"));
 });
 
-closeMenu.addEventListener("click", () => {
-  navLinks.classList.remove("nav-active");
-  burgerMenu.classList.remove("toggle");
+navLinks.addEventListener("click", () => {
+  console.log("Clicked navLinks");
+  navToggle.classList.remove("nav-open");
+  navLinks.classList.add("nav-none");
+  bars.forEach((bar) => bar.classList.remove("nav-open"));
 });
