@@ -45,7 +45,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-left: 40px;
-  color: #565556;
+  color: #6b6b6b;
   letter-spacing: 1px;
   font-family: 'roboto', serif;
 }
@@ -204,7 +204,7 @@ header .social-media i:hover {
     margin-bottom: 20px;
     text-align: left;
     letter-spacing: 1px;
-    color: #454b76;
+    color: #6069aa;
   }
   
   .description {
@@ -216,7 +216,7 @@ header .social-media i:hover {
   #title {
     font: bold 25px/1.2 'roboto', serif;
     text-align: center;
-    color: #2f2e6b;
+    color: #7575af;
   }
   
   .presentation a {
@@ -224,16 +224,18 @@ header .social-media i:hover {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-color: var(--color-4);
+    background-color: #a9a1a9;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 30px;
     transition: background-color 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  
   }
   
   .presentation a:hover {
-    background-color: #644b5f;
+    background-color: #4f4584;
   }
   
   @media (max-width: 768px) {
@@ -268,14 +270,15 @@ header .social-media i:hover {
   flex-direction: column;
   align-items: center;
   background-image: url(images/images2.jpg);
-  background-attachment: fixed;
+  background-attachment:fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   height: auto;
   width: 100vw;
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1300px;border-radius: 10px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 }
 
 .photo-container img {
@@ -314,15 +317,15 @@ header .social-media i:hover {
 }
 
 #about-me .about-me-content a {
-  font-size: 18px;
+  font-size: 22px;
   color: #fff;
   background-color: #5d455d;
   text-decoration: none;
-  border-radius: 10px;
-  padding: 10px 20px;
+  border-radius: 20px;
+  padding: 30px 30px;
   transition: .5s;
   font-weight: bold;
-  margin-right: 20px;
+  box-shadow: 0 0 5px rgba(243, 238, 238, 0.8);
   font-family: 'Roboto', sans-serif;
   align-items: center;
 }
@@ -363,13 +366,16 @@ height: auto;
     font-size: 16px;
   }
   #about-me .about-me-content p {
-    font-size: 22px;
-    line-height: 24px;
-    text-shadow: #161515 80px;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+    -webkit-text-stroke: #161515;
   }
   #about-me .about-me-content a {
-    font-size: 14px;
-    padding: 8px 16px;
+    font-size: 16px;
+margin-left:  0px;
+    padding: 10px 10px;
+
   }
   
 }
@@ -659,14 +665,17 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 30px;
+
+  margin-bottom: 30px;
 }
 
 .contact .social-icons a {
   text-decoration: none;
-  margin-bottom: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-  padding: 5px;
+  
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 0 5px rgba(233, 229, 229, 0.9);
+  padding: 2px;
   border-radius: 50px;
   transition: all 0.3s ease;
   background-color: #f9f7f9;
